@@ -18,7 +18,13 @@ La solución que utiliza POO se muestra en el modelo encontrado en el archivo `C
     UEFA.CambiarEstrategiaCalculo(new CalculoPuntosPromedioCincoMejores());
     CONCACAF.CambiarEstrategiaCalculo(new CalculoPuntosPromedioCincoPeores());
     ```
+    Las cuatro estrategias de cálculo definidas por requerimiento son:
     
+    - Promedio de puntos de los equipos contenidos mediente el uso de la clase  `CalculoPuntosPromedio` (default).
+    - Suma del total de puntos de los equipos contenidos mediante la clase  `CalculoPuntosSumaTotal`.
+    - Promedio de puntos de los Cinco mejores equipos contenidos mediante la clase `CalculoPuntosPromedioCincoMejores`.
+    - Promedio de puntos de los Cinco peores equipos contenidos mediante la clase `CalculoPuntosPromedioCincoPeores`.
+
     Para crear un nuevo tipo de cálculo sólo es necesario crear una nueva clase que implemente la interfaz `ICalculoPuntos` e implementar el método de esta misma.
     
 - **Rankings:** Para visualizar cada uno de los rankings luego de haber agregado los grupos a la instancia de la clase `FIFA` que en este caso actúa como un Singleton (única clase), se puede ejecutar la visualización de los rankings via:
