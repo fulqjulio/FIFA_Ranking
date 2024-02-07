@@ -11,7 +11,7 @@ La solución que utiliza POO se muestra en el modelo encontrado en el archivo `C
 ### Historias de usuario
 
 - **Incorporar Nuevos Grupos de Equipos:** para realizar esta incorporación al igual que con las clases Confederación y Asociación basta con crear la clase y heredar de la clase `Grupo` **, de ser necesario agregar las implementaciones específicas de la nueva clase. De esta manera también se respetan los principios SOLID.**
-- **Cambiar Caluculo Puntaje Grupos:** Los grupos ya sean Confederaciones o Asociaciones o cualquier otro grupo creado tiene por default el calculo de los puntos con el promedio del puntaje de sus equipos asociados. Para realizar el cambio de este cálculo de puntos en tiempo de ejecución se hace uso de un patrón de diseño Estrategia y basta con reasignar el tipo de estrategia de cálculo al grupo.
+- **Cambiar Calculo Puntaje Grupos:** Los grupos ya sean Confederaciones o Asociaciones o cualquier otro grupo creado tiene por default el calculo de los puntos con el promedio del puntaje de sus equipos asociados. Para realizar el cambio de este cálculo de puntos en tiempo de ejecución se hace uso de un patrón de diseño Estrategia y basta con reasignar el tipo de estrategia de cálculo al grupo.
     
     ```csharp
     CONMEBOL.CambiarEstrategiaCalculo(new CalculoPuntosSumaTotal());
