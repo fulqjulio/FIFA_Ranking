@@ -38,6 +38,8 @@ class Program
         CONCACAF.AgregarEquipo(Toronto);
         CONCACAF.EvaluarPuntuacion();
 
+
+
         FIFA fifa = new FIFA();
         fifa.AgregarGrupo(UEFA);
         fifa.AgregarGrupo(CONMEBOL);
